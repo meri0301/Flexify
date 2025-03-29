@@ -1,0 +1,94 @@
+$border-color: #ddd;
+$primary-color: #FE5E00;
+$font-family: Noto Sans;
+
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: $font-family;
+  background-color: #f9f9f9;
+  height: 93vh;
+  gap: 10px;
+
+  .backButton {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: $font-family;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+  }
+
+  .signupForm {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+
+    input {
+      height: 42px;
+      padding: 0 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+      background-color: #EAEAEA;
+      border: none;
+      font-family: $font-family;
+    }
+
+    .signupButton {
+      background-color: $primary-color;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: $font-family;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .divider {
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+
+    hr {
+      width: 159px;
+      border: none;
+      border-top: 1px solid $border-color;
+    }
+
+    span {
+      color: black;
+      font-size: 20px;
+      font-family: $font-family;
+    }
+  }
+
+  .privacyText {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+  }
+}
