@@ -3,17 +3,13 @@ import PropTypes from "prop-types";
 import classNames from './index.module.scss';
 
 const data = [
-    {key: 1, name: 'Get Shaped'},
-    {key: 2, name: 'Look Better'},
-    {key: 3, name: 'Improve health'},
-    {key: 4, name: 'Boost Energy'},
-    {key: 5, name: 'Feel Confident'},
+    {key: 1, name: 'No Equipments'},
+    {key: 2, name: 'No Jumping'},
+    {key: 3, name: 'More Lying Exercises'},
+    {key: 4, name: 'Less push-ups'},
 ]
 
-const Motivation = ({selected, onSelect}) => {
-    // const change = () => {
-    //     console.log('-------')
-    // }
+const WorkoutType = ({selected, onSelect}) => {
 
     return (
         <div className={classNames.motivationContainer}>
@@ -24,15 +20,13 @@ const Motivation = ({selected, onSelect}) => {
                         return (
                             <div
                                 className={`${classNames.motivationItems} ${selected === el.key ? classNames.selected : ''}`}
-                                key={el.key}>
+                                key={el.key} onClick={() => onSelect(el.key, 'workoutType')}>
                                 <input
                                     type="radio"
                                     value={el.key}
                                     name="motivation"
-                                    checked={selected === el.key}
+                                    defaultChecked={selected === el.key}
                                     className={classNames.motivationRadioInput}
-                                    // onChange={() => onSelect(el.key, 'motivation')}
-                                    // onChange={change}
                                 />
                                 <span className={classNames.radioCircle}></span>
                                 <span className={classNames.motivationItemText}>{el.name}</span>
@@ -45,9 +39,9 @@ const Motivation = ({selected, onSelect}) => {
     )
 }
 
-Motivation.propTypes = {
+WorkoutType.propTypes = {
     onSelect: PropTypes.func,
     selected: PropTypes.number,
 };
 
-export default memo(Motivation);
+export default memo(WorkoutType);

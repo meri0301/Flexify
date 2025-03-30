@@ -1,0 +1,66 @@
+.body-parts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: auto;
+
+  .body-parts-container-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .body-parts-image-container {
+    position: relative;
+    width: 100%;
+
+    .body-parts-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .body-parts-focus-button {
+      position: absolute;
+      font-size: 0.875rem;
+      padding: 0.6rem 1rem;
+      background-color: white;
+      border-radius: 7px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s ease;
+
+      &.selected {
+        background-color: #f97316;
+        color: white;
+      }
+    }
+
+    .top-left {
+      top: 10%;
+      left: 5%;
+    }
+    .middle-left {
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+    }
+    .top-right {
+      top: 10%;
+      right: 5%;
+    }
+    .middle-right {
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%);
+    }
+    .bottom-right {
+      bottom: 5%;
+      right: 5%;
+    }
+  }
+}

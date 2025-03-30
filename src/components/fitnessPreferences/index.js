@@ -4,6 +4,12 @@ import {FaAngleLeft} from "react-icons/fa6";
 import Button from "../button";
 import Motivation from "./motivation";
 import MainGoal from "./mainGoal";
+import BodyParts from "./bodyParts";
+import Height from "./height";
+import Weight from "./weight";
+import Age from "./age";
+import WorkoutType from "./workoutType";
+import ActivityLevel from "./activityLevel";
 
 const FitnessPreferences = ({}) => {
     const [currentStep, setCurrentStep] = useState(0);
@@ -29,7 +35,6 @@ const FitnessPreferences = ({}) => {
     }, [currentStep]);
 
     const selectHandler = useCallback((value, propKey) => {
-        console.log('--')
         setSelectedOption({...selectedOption, [propKey]: value});
     }, [selectedOption]);
 
@@ -38,19 +43,19 @@ const FitnessPreferences = ({}) => {
             case 0:
                 return <Motivation selected={selectedOption?.motivation} onSelect={selectHandler}/>;
             case 1:
-                return <MainGoal/>;
+                return <MainGoal selected={selectedOption?.mainGoal} onSelect={selectHandler}/>;
             case 2:
-                return <div>3</div>;
+                return <BodyParts selected={selectedOption?.bodyParts} onSelect={selectHandler}/>;
             case 3:
-                return <div>4</div>;
+                return <Height onSelect={selectHandler}/>;
             case 4:
-                return <div>5</div>;
+                return <Weight onSelect={selectHandler}/>;
             case 5:
-                return <div>6</div>;
+                return <Age onSelect={selectHandler}/>;
             case 6:
-                return <div>7</div>;
+                return <WorkoutType selected={selectedOption?.workoutType} onSelect={selectHandler}/>;
             case 7:
-                return <div>8</div>;
+                return <ActivityLevel/>;
             default:
                 return null;
         }
