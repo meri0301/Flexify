@@ -1,0 +1,33 @@
+.creating-plan {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 40px 20px;
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .circle-progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+
+
+.summary-container {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.steps-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  width: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+
+  .title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .steps-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+
+    .icon {
+      color: #ff7a00;
+      font-size: 20px;
+    }
+
+    .steps-count {
+      color: #222;
+    }
+  }
+
+  .goal-text {
+    font-size: 13px;
+    color: #666;
+    margin: 6px 0 10px;
+  }
+
+  .progress-bar {
+    background: #eee;
+    border-radius: 10px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+
+    .progress-fill {
+      background: #ff7a00;
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+  }
+}
+
+.exercise-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  width: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .info-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .icon {
+      font-size: 18px;
+      color: #444;
+
+      &.fire {
+        color: #ff4500;
+      }
+    }
+
+    .info-text {
+      font-size: 15px;
+      color: #444;
+      font-weight: bold;
+    }
+  }
+}

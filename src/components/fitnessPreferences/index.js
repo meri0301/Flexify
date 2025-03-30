@@ -10,20 +10,15 @@ import Weight from "./weight";
 import Age from "./age";
 import WorkoutType from "./workoutType";
 import ActivityLevel from "./activityLevel";
+import CreatingPlan from "./creatingPlan";
 
 const FitnessPreferences = ({}) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [selectedOption, setSelectedOption] = useState({});
     const progress = ((currentStep + 1) / 8) * 100;
 
-    const selectionHandler = useCallback((option) => {
-        // setSelectedOption(option);
-        // setProgress((prev) => (prev < 100 ? prev + 20 : 100));
-    }, []);
-
     const nextHandler = useCallback(() => {
-        // setProgress((prev) => (prev < 100 ? prev + 20 : 100));
-        if (currentStep < 7) {
+        if (currentStep < 8) {
             setCurrentStep((prev) => prev + 1);
         }
     }, [currentStep])
@@ -55,7 +50,9 @@ const FitnessPreferences = ({}) => {
             case 6:
                 return <WorkoutType selected={selectedOption?.workoutType} onSelect={selectHandler}/>;
             case 7:
-                return <ActivityLevel/>;
+                return <ActivityLevel onSelect={selectHandler}/>;
+            case 8:
+                return <CreatingPlan/>;
             default:
                 return null;
         }
@@ -64,14 +61,16 @@ const FitnessPreferences = ({}) => {
     return (
         <div className="survey-container">
             <div className="survey-header">
-                <button className={`pref-back-button ${currentStep === 0 ? 'disabled' : ""}`} onClick={backHandler}><FaAngleLeft/></button>
+                <button className={`pref-back-button ${currentStep === 0 ? 'disabled' : ""}`} onClick={backHandler}>
+                    <FaAngleLeft/></button>
                 <div className="progress-bar">
                     <div className="progress" style={{width: `${progress}%`}}></div>
                 </div>
                 <span className="skip-button">Skip</span>
             </div>
             {stepRenderer()}
-            <Button classNames={'nextButton color-1'} disabled={!selectedOption && currentStep < 3} title={`${currentStep === 7 ? "Finish" : "Next"}`} onClick={nextHandler}/>
+            <Button classNames={'nextButton color-1'} disabled={!selectedOption && currentStep < 3}
+                    title={`${currentStep === 7 ? "Finish" : "Next"}`} onClick={nextHandler}/>
         </div>
     )
 }

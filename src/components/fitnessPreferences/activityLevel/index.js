@@ -1,7 +1,8 @@
 import React, {memo, useState} from "react";
 import "./index.scss";
+import PropTypes from "prop-types";
 
-const ActivityLevel = () => {
+const ActivityLevel = ({onSelect}) => {
     const [level, setLevel] = useState(0);
 
     const levels = [
@@ -28,6 +29,7 @@ const ActivityLevel = () => {
     const current = levels[level];
 
     const handleSliderChange = (e) => {
+        onSelect && onSelect && onSelect(level.percentage, 'activityLevel');
         setLevel(parseInt(e.target.value, 10));
     };
 
@@ -82,5 +84,9 @@ const ActivityLevel = () => {
         </div>
     );
 };
+
+ActivityLevel.propTypes = {
+    onSelect: PropTypes.func,
+}
 
 export default memo(ActivityLevel);

@@ -1,0 +1,81 @@
+.calories-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 0 13px 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 93%;
+
+  .calories-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .calories-subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+  }
+
+  .calories-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .calories-progress {
+      position: relative;
+      width: 100px;
+      height: 100px;
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .calories-amount {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        text-align: center;
+        .calories-amount-bold {
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        span {
+          display: block;
+          font-size: 12px;
+          font-weight: normal;
+          color: #666;
+        }
+      }
+    }
+
+    .calories-info {
+      font-size: 14px;
+      color: #444;
+
+      div {
+        margin: 6px 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .info-icon {
+          color: #ff7a00;
+        }
+
+        .strong {
+          margin-left: auto;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import SignIn from "./pages/login/signIn";
 import {Routes, Route} from 'react-router-dom';
 import SignUp from "./pages/login/signUp";
 import FitnessPreferences from "./components/fitnessPreferences";
+import Screen from "./pages/screen";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/signIn" element={<SignIn/>}/>
                 <Route path="/signup" element={<SignUp/>}/>
                 <Route path={'/preferences'} element={<FitnessPreferences/>}/>
+                <Route path={'/screen'} element={<Screen/>}/>
             </Routes>
         </div>
     );
