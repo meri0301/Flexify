@@ -4,35 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9fe91f9-757b-491e-a245-aa5bb1927d67" name="Changes" comment="creating steps for registering">
-      <change afterPath="$PROJECT_DIR$/src/assets/promoBanner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/todayActivity1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/todayActivity2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/workout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/creatingPlan/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/creatingPlan/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/calories/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/calories/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/promo/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/promo/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/summary/exercise.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/summary/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/summary/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/summary/steps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/screen/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/screen/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/today/activities.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/today/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/today/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/today/progressOverview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/today/stepAndWaterCard.js" afterDir="false" />
+    <list default="true" id="c9fe91f9-757b-491e-a245-aa5bb1927d67" name="Changes" comment="adding pages">
+      <change afterPath="$PROJECT_DIR$/src/components/workoutPlayer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/workoutPlayer/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/workoutPlayer/wrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/myProfile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/myProfile/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/reminder/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/reminder/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/screen/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/screen/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/activityLevel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/activityLevel/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/creatingPlan/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/creatingPlan/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/signIn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signIn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/screen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/screen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/today/activities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/today/activities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/today/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/today/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/today/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/today/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -83,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\pages\account\myProfile" />
       <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\assets" />
       <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\pages" />
       <recent name="C:\Users\meri.movsesyan\Desktop\flexify\public" />
@@ -105,7 +101,7 @@
       <updated>1742294297469</updated>
       <workItem from="1742294298518" duration="3561000" />
       <workItem from="1742298987383" duration="3554000" />
-      <workItem from="1742910932872" duration="47210000" />
+      <workItem from="1742910932872" duration="74936000" />
     </task>
     <task id="LOCAL-00001" summary="adding files">
       <option name="closed" value="true" />
@@ -123,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743335692271</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding pages">
+      <option name="closed" value="true" />
+      <created>1743350187995</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743350187995</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +159,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="adding files" />
     <MESSAGE value="creating steps for registering" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating steps for registering" />
+    <MESSAGE value="adding pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding pages" />
   </component>
 </project>

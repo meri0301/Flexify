@@ -5,7 +5,8 @@ import StepAndWaterCard from "./stepAndWaterCard";
 import ProgressOverview from "./progressOverview";
 
 
-const TodayScreen = () => {
+
+const TodayScreen = ({}) => {
 
     const today = new Date();
     const formatted = today.toLocaleDateString("en-US", {
@@ -17,12 +18,15 @@ const TodayScreen = () => {
     return (
         <div className={'today-container'}>
             <span className={'today-date'}>{formatted}</span>
-            <Activities/>
+            <Activities />
             <StepAndWaterCard/>
             <ProgressOverview/>
 
         </div>
     )
+}
+
+TodayScreen.propTypes = {
 }
 
 export default memo(TodayScreen)

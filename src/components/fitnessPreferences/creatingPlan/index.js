@@ -11,7 +11,7 @@ const CreatingPlan = () => {
             setProgress((prev) => {
                 if (prev >= 100) {
                     clearInterval(interval);
-                    setTimeout(() => navigate("/screen"), 500);
+                    setTimeout(() => navigate("/home"), 500);
                     return 100;
                 }
                 return prev + 1;

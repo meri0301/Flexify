@@ -1,5 +1,4 @@
-import React, {} from "react";
-import {useNavigate} from "react-router-dom";
+import React from "react";
 import CaloriesCard from "./calories/index";
 import Summary from "./summary/index";
 import WorkoutPromo from "./promo/index";
