@@ -1,0 +1,80 @@
+
+.historyPage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  background: #FBF9F7;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  h2 {
+    font-size: 20px;
+    margin-left: 25%;
+  }
+}
+
+.back {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+// History Card
+.historyCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.workouts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workoutItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.workoutItem img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.workoutItem strong {
+  font-size: 15px;
+  color: #333;
+}
+
+.workoutItem p {
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}

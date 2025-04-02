@@ -4,37 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9fe91f9-757b-491e-a245-aa5bb1927d67" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/example.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/mainGoal/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/mainGoal/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/motivation/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/motivation/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c9fe91f9-757b-491e-a245-aa5bb1927d67" name="Changes" comment="adding reminder">
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/exercises/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fastWorkout/fast1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fastWorkout/fast2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fastWorkout/fast3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fastWorkout/fast4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/pilatesWorkout/pilates1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/pilatesWorkout/pilates2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/pilatesWorkout/pilates3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/pilatesWorkout/pilates4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/popup/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/popup/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/feedback/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/feedback/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/history/historyCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/history/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/history/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/policy/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/account/policy/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/bodyFocus/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/bodyFocus/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/tile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/tile/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/workoutDetails/fastWorkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/workoutDetails/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/components/workoutDetails/pilatesWorkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/workouts/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/service-worker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signIn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signIn/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signIn/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signIn/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signUp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signUp/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signUp/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorkerRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorkerRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fitnessPreferences/creatingPlan/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fitnessPreferences/creatingPlan/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/myProfile/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/myProfile/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/reminder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/reminder/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/reminder/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/reminder/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/promo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/promo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/screen/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/screen/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/screen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/screen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/screen/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/screen/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/today/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/today/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +108,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\public" />
+      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\assets\pilatesWorkout" />
+      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\assets\fastWorkout" />
+      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\assets\exercises" />
+      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\assets" />
+      <recent name="C:\Users\meri.movsesyan\Desktop\flexify\src\components" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -105,12 +132,56 @@
       <updated>1742294297469</updated>
       <workItem from="1742294298518" duration="3561000" />
       <workItem from="1742298987383" duration="3554000" />
-      <workItem from="1742910932872" duration="22005000" />
+      <workItem from="1742910932872" duration="110386000" />
     </task>
+    <task id="LOCAL-00001" summary="adding files">
+      <option name="closed" value="true" />
+      <created>1743268712962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743268712962</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creating steps for registering">
+      <option name="closed" value="true" />
+      <created>1743335692271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743335692271</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding pages">
+      <option name="closed" value="true" />
+      <created>1743350187995</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743350187995</updated>
+    </task>
+    <task id="LOCAL-00004" summary="adding reminder">
+      <option name="closed" value="true" />
+      <created>1743498527144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743498527144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="GitHub.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -125,5 +196,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="adding files" />
+    <MESSAGE value="creating steps for registering" />
+    <MESSAGE value="adding pages" />
+    <MESSAGE value="adding reminder" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding reminder" />
   </component>
 </project>

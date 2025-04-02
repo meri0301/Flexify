@@ -4,20 +4,21 @@ import {FaAngleLeft} from "react-icons/fa6";
 import Button from "../button";
 import Motivation from "./motivation";
 import MainGoal from "./mainGoal";
+import BodyParts from "./bodyParts";
+import Height from "./height";
+import Weight from "./weight";
+import Age from "./age";
+import WorkoutType from "./workoutType";
+import ActivityLevel from "./activityLevel";
+import CreatingPlan from "./creatingPlan";
 
 const FitnessPreferences = ({}) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [selectedOption, setSelectedOption] = useState({});
     const progress = ((currentStep + 1) / 8) * 100;
 
-    const selectionHandler = useCallback((option) => {
-        // setSelectedOption(option);
-        // setProgress((prev) => (prev < 100 ? prev + 20 : 100));
-    }, []);
-
     const nextHandler = useCallback(() => {
-        // setProgress((prev) => (prev < 100 ? prev + 20 : 100));
-        if (currentStep < 7) {
+        if (currentStep < 8) {
             setCurrentStep((prev) => prev + 1);
         }
     }, [currentStep])
@@ -29,7 +30,6 @@ const FitnessPreferences = ({}) => {
     }, [currentStep]);
 
     const selectHandler = useCallback((value, propKey) => {
-        console.log('--')
         setSelectedOption({...selectedOption, [propKey]: value});
     }, [selectedOption]);
 
@@ -38,19 +38,21 @@ const FitnessPreferences = ({}) => {
             case 0:
                 return <Motivation selected={selectedOption?.motivation} onSelect={selectHandler}/>;
             case 1:
-                return <MainGoal/>;
+                return <MainGoal selected={selectedOption?.mainGoal} onSelect={selectHandler}/>;
             case 2:
-                return <div>3</div>;
+                return <BodyParts selected={selectedOption?.bodyParts} onSelect={selectHandler}/>;
             case 3:
-                return <div>4</div>;
+                return <Height onSelect={selectHandler}/>;
             case 4:
-                return <div>5</div>;
+                return <Weight onSelect={selectHandler}/>;
             case 5:
-                return <div>6</div>;
+                return <Age onSelect={selectHandler}/>;
             case 6:
-                return <div>7</div>;
+                return <WorkoutType selected={selectedOption?.workoutType} onSelect={selectHandler}/>;
             case 7:
-                return <div>8</div>;
+                return <ActivityLevel onSelect={selectHandler}/>;
+            case 8:
+                return <CreatingPlan/>;
             default:
                 return null;
         }
@@ -59,14 +61,16 @@ const FitnessPreferences = ({}) => {
     return (
         <div className="survey-container">
             <div className="survey-header">
-                <button className={`pref-back-button ${currentStep === 0 ? 'disabled' : ""}`} onClick={backHandler}><FaAngleLeft/></button>
+                <button className={`pref-back-button ${currentStep === 0 ? 'disabled' : ""}`} onClick={backHandler}>
+                    <FaAngleLeft/></button>
                 <div className="progress-bar">
                     <div className="progress" style={{width: `${progress}%`}}></div>
                 </div>
                 <span className="skip-button">Skip</span>
             </div>
             {stepRenderer()}
-            <Button classNames={'nextButton color-1'} disabled={!selectedOption && currentStep < 3} title={`${currentStep === 7 ? "Finish" : "Next"}`} onClick={nextHandler}/>
+            <Button classNames={'nextButton color-1'} disabled={!selectedOption && currentStep < 3}
+                    title={`${currentStep === 7 ? "Finish" : "Next"}`} onClick={nextHandler}/>
         </div>
     )
 }

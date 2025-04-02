@@ -1,0 +1,45 @@
+$border-color: #ddd;
+$primary-color: #FE5E00;
+$font-family: Noto Sans;
+
+.age-picker {
+  text-align: center;
+  font-family: $font-family;
+  padding: 20px;
+
+  .title {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .age-selector {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    gap: 6px;
+
+    .age-item {
+      font-size: 24px;
+      color: #666;
+      transition: all 0.3s ease;
+
+      &.active {
+        color: $primary-color;
+        font-size: 32px;
+        font-weight: bold;
+        border: 2px solid $primary-color;
+        border-radius: 12px;
+        padding: 4px 12px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

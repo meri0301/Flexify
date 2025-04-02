@@ -15,7 +15,6 @@ const Motivation = ({selected, onSelect}) => {
     //     console.log('-------')
     // }
 
-    console.log(selected)
     return (
         <div className={classNames.motivationContainer}>
             <span className={classNames.motivationTitle}>What motivates you the most?</span>
@@ -25,12 +24,12 @@ const Motivation = ({selected, onSelect}) => {
                         return (
                             <div
                                 className={`${classNames.motivationItems} ${selected === el.key ? classNames.selected : ''}`}
-                                key={el.key} onClick={() => onSelect(el.key, 'motivation')}>
+                                key={el.key}>
                                 <input
                                     type="radio"
                                     value={el.key}
                                     name="motivation"
-                                    defaultChecked={selected === el.key}
+                                    checked={selected === el.key}
                                     className={classNames.motivationRadioInput}
                                     // onChange={() => onSelect(el.key, 'motivation')}
                                     // onChange={change}

@@ -12,7 +12,6 @@ const SignIn = () => {
     const navigate = useNavigate();
 
     const signInHandler = useCallback(() => {
-        console.log('sign innnnn');
         navigate('/preferences');
     }, [navigate]);
 
