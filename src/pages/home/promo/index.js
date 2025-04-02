@@ -5,7 +5,7 @@ import girlImage from "../../../assets/promoBanner.png"; // girl image
 import workoutText from "../../../assets/workout.png";
 import Button from "../../../components/button"; // WORKOUT text image
 
-const WorkoutPromo = () => {
+const WorkoutPromo = ({onNext}) => {
     const navigate = useNavigate();
 
     return (
@@ -21,6 +21,7 @@ const WorkoutPromo = () => {
             <Button
                 title={'Next'}
                 classNames={'next-btn color-1'}
+                onClick={() => onNext({value: 'workouts'})}
             />
         </div>
     );

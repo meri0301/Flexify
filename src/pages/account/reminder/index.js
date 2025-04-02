@@ -100,7 +100,7 @@ const ReminderPage = () => {
 
             <div className={styles.scrollContainer}>
                 {reminders.map((reminder, index) => (
-                    <div key={index} className={styles.card} >
+                    <div key={index} className={styles.card}>
                         <div className={styles.timeRow}>
                             <span className={styles.time}>{reminder.time}</span>
                             <label className={styles.switch}>

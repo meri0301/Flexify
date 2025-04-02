@@ -4,9 +4,7 @@ import Summary from "./summary/index";
 import WorkoutPromo from "./promo/index";
 import "./index.scss";
 
-const HomeScreen = () => {
-    // const navigate = useNavigate();
-
+const HomeScreen = ({onNext}) => {
     return (
         <div>
             <h2 className="section-title">Today</h2>
@@ -14,7 +12,7 @@ const HomeScreen = () => {
             <div className={'home-screen-content'}>
                 <CaloriesCard/>
                 <Summary/>
-                <WorkoutPromo/>
+                <WorkoutPromo onNext={onNext}/>
             </div>
 
         </div>

@@ -1,0 +1,141 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 5px 85px 5px;
+  gap: 30px;
+  overflow-x: auto;
+  height: 100%;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.horizontal {
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 14px;
+  padding-bottom: 4px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.horizontal::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.card {
+  background: #f7f7f7;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 180px;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.cardText {
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.cardText strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.cardText span,
+.cardText p {
+  font-size: 13px;
+  color: #777;
+}
+
+/////////////////////////////
+
+.tileContent {
+  height: 200px;
+}
+
+.tileContent2 {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.bodyFocusContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fastAndPilatesContent {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
+
+.duration {
+  font-size: 13px;
+  color: gray;
+}
+
+.stretchContainer {
+
+}
+
+.stretchContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.stretchItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    width: 200px;
+    height: 140px;
+    border-radius: 10px;
+  }
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}

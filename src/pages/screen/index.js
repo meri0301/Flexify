@@ -1,14 +1,13 @@
 import React, {useCallback, useState} from "react";
 import "./index.scss";
 import Home from "../home";
-import {useNavigate} from "react-router-dom";
 import Today from "../today";
 import Account from "../account";
 import Header from "./header";
 import Footer from "./footer";
+import Workouts from "../workouts";
 
 const Screen = () => {
-    const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState('home');
 
     const buttonClickHandler = useCallback((page) => {
@@ -18,9 +17,9 @@ const Screen = () => {
     const pageRenderer = useCallback(() => {
         switch (currentPage) {
             case 'home':
-                return <Home/>;
+                return <Home onNext={buttonClickHandler}/>;
             case 'workouts':
-                return <div>Workout</div>;
+                return <Workouts/>;
             case 'today':
                 return <Today/>;
             case 'account':

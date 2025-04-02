@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import {FaUser} from "react-icons/fa";
 import styles from "./index.module.scss";
 import {useNavigate} from "react-router-dom";
+import PopupModal from "../../components/popup";
 
 const AccountPage = () => {
     const navigate = useNavigate();
+    const [showPopup, setShowPopup] = useState(false);
 
     const menuItems = [
         {label: "My Profile", path: "/account/profile"},
@@ -14,7 +16,13 @@ const AccountPage = () => {
         {label: "Feedback", path: "/account/feedback"},
     ];
 
+    const closePopupHandler = () => {
+        navigate('/login');
+        setShowPopup(false);
+    };
+
     return (
+        <>
         <div className={styles.accountPage}>
             <div className={styles.statsSection}>
                 <div className={styles.statBox}>
@@ -48,11 +56,25 @@ const AccountPage = () => {
                         <span className={styles.arrow}>→</span>
                     </div>
                 ))}
-                <div className={styles.menuItem}>
+                <div className={styles.menuItem} onClick={() => setShowPopup(true)}>
                     <span>Delete All Data</span>
                 </div>
             </div>
         </div>
+
+            {showPopup && (
+                <PopupModal
+                    title="Delete All Data"
+                    message="Are you sure you want to delete all your data?"
+                    onClose={() => setShowPopup(false)}
+                    onConfirm={closePopupHandler}
+                    confirmText="Yes"
+                    cancelText="Cancel"
+                    showCancel
+                />
+            )}
+
+        </>
     );
 };
 
