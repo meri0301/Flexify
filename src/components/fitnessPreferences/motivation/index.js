@@ -24,12 +24,13 @@ const Motivation = ({selected, onSelect}) => {
                         return (
                             <div
                                 className={`${classNames.motivationItems} ${selected === el.key ? classNames.selected : ''}`}
-                                key={el.key}>
+                                key={el.key} onClick={() => onSelect(el.key, 'motivation')}>
                                 <input
                                     type="radio"
                                     value={el.key}
                                     name="motivation"
-                                    checked={selected === el.key}
+                                    defaultChecked={selected === el.key}
+                                    // checked={selected === el.key}
                                     className={classNames.motivationRadioInput}
                                     // onChange={() => onSelect(el.key, 'motivation')}
                                     // onChange={change}

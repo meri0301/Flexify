@@ -1,4 +1,4 @@
-import React, {memo, useCallback, useState} from "react";
+import React, {memo, useCallback, useRef, useState} from "react";
 import PropTypes from "prop-types";
 import './index.scss'
 
@@ -32,6 +32,58 @@ const Weight = ({onSelect}) => {
         return position % 10 === 0 ? "large" : position % 5 === 0 ? "medium" : "small";
     });
 
+    const useWeightScroll = ({ minWeight, maxWeight, onSelect }) => {
+        const touchStartY = useRef(null);
+
+        // Desktop: mouse wheel scroll
+        const handleWheel = useCallback((e) => {
+            const scrollValue = e.deltaY > 0 ? -1 : 1;
+            setWeight((prev) => {
+                const newWeight = prev + scrollValue;
+                onSelect?.(newWeight, "weight");
+                return Math.min(Math.max(newWeight, minWeight), maxWeight);
+            });
+        }, [minWeight, maxWeight, onSelect]);
+
+        // Mobile: touch swipe up/down
+        const handleTouchStart = useCallback((e) => {
+            touchStartY.current = e.touches[0].clientY;
+        }, []);
+
+        const handleTouchMove = useCallback((e) => {
+            if (touchStartY.current === null) return;
+
+            const currentY = e.touches[0].clientY;
+            const deltaY = currentY - touchStartY.current;
+
+            // Only react to meaningful swipes (you can adjust 10)
+            if (Math.abs(deltaY) > 10) {
+                const scrollValue = deltaY > 0 ? 1 : -1;
+                setWeight((prev) => {
+                    const newWeight = prev + scrollValue;
+                    onSelect?.(newWeight, "weight");
+                    return Math.min(Math.max(newWeight, minWeight), maxWeight);
+                });
+
+                // Reset start to prevent multiple triggers
+                touchStartY.current = currentY;
+            }
+        }, [minWeight, maxWeight, onSelect]);
+
+        return {
+            handleWheel,
+            handleTouchStart,
+            handleTouchMove
+        };
+    };
+
+    const {
+        handleWheel,
+        handleTouchStart,
+        handleTouchMove
+    } = useWeightScroll({ minWeight: 30, maxWeight: 300, onSelect });
+
+
     return (
         <div className="height-picker">
             <h2 className="title">What’s Your Current Weight?</h2>
@@ -50,7 +102,9 @@ const Weight = ({onSelect}) => {
                 </button>
             </div>
 
-            <div className="ruler horizontal" onWheel={handleScroll}>
+            <div className="ruler horizontal" onWheel={handleWheel}
+                 onTouchStart={handleTouchStart}
+                 onTouchMove={handleTouchMove}>
                 <div className="markings-horizontal">
                     {markings.map((mark) => (
                         <div

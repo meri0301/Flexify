@@ -1,4 +1,4 @@
-import React, {memo, useCallback, useState} from "react";
+import React, {memo, useCallback,useRef, useState} from "react";
 import PropTypes from "prop-types";
 import './index.scss'
 
@@ -12,6 +12,51 @@ const Height = ({onSelect}) => {
 
     const minHeight = 100;
     const maxHeight = 220;
+
+    const useHeightScroll = ({ minHeight, maxHeight, onSelect }) => {
+        const touchStartY = useRef(null);
+
+        // Desktop: mouse wheel scroll
+        const handleWheel = useCallback((e) => {
+            const scrollValue = e.deltaY > 0 ? -1 : 1;
+            setHeight((prev) => {
+                const newHeight = prev + scrollValue;
+                onSelect?.(newHeight, "height");
+                return Math.min(Math.max(newHeight, minHeight), maxHeight);
+            });
+        }, [minHeight, maxHeight, onSelect]);
+
+        // Mobile: touch swipe up/down
+        const handleTouchStart = useCallback((e) => {
+            touchStartY.current = e.touches[0].clientY;
+        }, []);
+
+        const handleTouchMove = useCallback((e) => {
+            if (touchStartY.current === null) return;
+
+            const currentY = e.touches[0].clientY;
+            const deltaY = currentY - touchStartY.current;
+
+            // Only react to meaningful swipes (you can adjust 10)
+            if (Math.abs(deltaY) > 10) {
+                const scrollValue = deltaY > 0 ? 1 : -1;
+                setHeight((prev) => {
+                    const newHeight = prev + scrollValue;
+                    onSelect?.(newHeight, "height");
+                    return Math.min(Math.max(newHeight, minHeight), maxHeight);
+                });
+
+                // Reset start to prevent multiple triggers
+                touchStartY.current = currentY;
+            }
+        }, [minHeight, maxHeight, onSelect]);
+
+        return {
+            handleWheel,
+            handleTouchStart,
+            handleTouchMove
+        };
+    };
 
     const handleScroll = useCallback((e) => {
         const scrollValue = e.deltaY > 0 ? -1 : 1;
@@ -33,6 +78,13 @@ const Height = ({onSelect}) => {
         return position % 10 === 0 ? "large" : position % 5 === 0 ? "medium" : "small";
     });
 
+    const {
+        handleWheel,
+        handleTouchStart,
+        handleTouchMove
+    } = useHeightScroll({ minHeight: 50, maxHeight: 200, onSelect });
+
+
     return (
         <div className="height-picker">
             <h2 className="title">What’s Your Height?</h2>
@@ -51,7 +103,9 @@ const Height = ({onSelect}) => {
                 </button>
             </div>
 
-            <div className="ruler" onWheel={handleScroll}>
+            <div className="ruler" onWheel={handleWheel}
+                 onTouchStart={handleTouchStart}
+                 onTouchMove={handleTouchMove}>
                 <div className="markings">
                     {markings.map((mark) => (
                         <div

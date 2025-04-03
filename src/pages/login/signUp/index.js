@@ -4,9 +4,10 @@ import "./index.scss";
 import {GoogleLogin} from "@react-oauth/google";
 import {jwtDecode} from "jwt-decode";
 import {FaAngleLeft} from "react-icons/fa6";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const SignUp = () => {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -28,11 +29,13 @@ const SignUp = () => {
         }
         setError("");
         console.log("Form submitted:", formData);
+        navigate('/preferences');
     };
 
     const loginGoogleHandler = useCallback((response) => {
         console.log(response);
         console.log(jwtDecode(response?.credential));
+        navigate('/screen');
     }, [])
 
 

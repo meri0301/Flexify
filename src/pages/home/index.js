@@ -6,7 +6,7 @@ import "./index.scss";
 
 const HomeScreen = ({onNext}) => {
     return (
-        <div>
+        <div className={'home-screen'}>
             <h2 className="section-title">Today</h2>
 
             <div className={'home-screen-content'}>

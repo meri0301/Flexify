@@ -26,6 +26,7 @@ const ReminderPage = () => {
         if ("Notification" in window && Notification.permission !== "granted") {
             Notification.requestPermission();
         }
+
     }, []);
 
     useEffect(() => {

@@ -12,13 +12,14 @@ const SignIn = () => {
     const navigate = useNavigate();
 
     const signInHandler = useCallback(() => {
-        navigate('/preferences');
+        navigate('/screen');
     }, [navigate]);
 
     const loginGoogleHandler = useCallback((response) => {
         console.log(response);
         console.log(jwtDecode(response?.credential))
-    }, [])
+        navigate('/screen');
+    }, [navigate]);
 
     return (
         <div className="signin-container">
