@@ -35,7 +35,7 @@ const AccountPage = () => {
                     <div className={styles.avatarCircle}>
                         <FaUser size={20} color="#fff"/>
                     </div>
-                    <span className={styles.name}>Meri</span>
+                    {/*<span className={styles.name}>Meri</span>*/}
                 </div>
 
                 <div className={styles.statBox}>

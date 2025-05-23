@@ -1,10 +1,10 @@
 import {NetworkConstants} from "../../constants/networkConstants";
-import NetworkService from "../../service/networkService";
+import {makeAPIGetRequest} from "../../service/networkService";
 
 const getHistory = () => {
     const url = [NetworkConstants.request_url.HISTORY];
     let options = {};
-    return NetworkService.makeAPIGetRequest(url, options);
+    return makeAPIGetRequest(url, options);
 }
 
 export {getHistory};

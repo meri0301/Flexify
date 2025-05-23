@@ -27,7 +27,7 @@ const MyProfilePage = () => {
 
             <div className={styles.avatarBox}>
                 <div className={styles.avatarCircle}><FaUser color="#fff"/></div>
-                <span className={styles.name}>Meri</span>
+                {/*<span className={styles.name}>Meri</span>*/}
             </div>
 
             <div className={styles.toggleRow}>

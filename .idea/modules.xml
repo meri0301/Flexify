@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FlexifyNew.iml" filepath="$PROJECT_DIR$/.idea/FlexifyNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FlexifyFront.iml" filepath="$PROJECT_DIR$/.idea/FlexifyFront.iml" />
     </modules>
   </component>
 </project>

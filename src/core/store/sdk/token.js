@@ -1,5 +1,5 @@
 import {NetworkConstants} from "../../constants/networkConstants";
-import NetworkService from "../../service/networkService";
+import {makeAPIPostRequest} from "../../service/networkService";
 
 const postToken = (data) => {
     const url = NetworkConstants.request_url.TOKEN;
@@ -7,7 +7,7 @@ const postToken = (data) => {
         body: data
     };
 
-    return NetworkService.makeAPIPostRequest(url, options);
+    return makeAPIPostRequest(url, options);
 }
 
 const signUp = (data) => {
@@ -16,7 +16,7 @@ const signUp = (data) => {
         body: data
     };
 
-    return NetworkService.makeAPIPostRequest(url, options);
+    return makeAPIPostRequest(url, options);
 }
 
 export {postToken, signUp};

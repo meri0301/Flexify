@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0beb0353-7019-4ccd-8df3-89a4bfbc9ae0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/constants/networkConstants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/constants/storageConstants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/service/networkService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/reducers/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/reducers/reminder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/reducers/token.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/reducers/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/sdk/feedback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/sdk/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/sdk/reminder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/sdk/token.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/store/sdk/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/managers/controllerManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/managers/sdkManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/managers/selectorManager.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account/feedback/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/feedback/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account/history/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/history/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account/reminder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/reminder/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signIn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signIn/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/signUp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/signUp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/screen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/screen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/service/networkService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/service/networkService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/feedback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/reminder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/reminder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/myProfile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/myProfile/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +21,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2xUptmp7SfIyPfWA9aBvtCFdv9N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/meri.movsesyan/Desktop/FlexifyNew/src/core/store",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\meri.movsesyan\Desktop\FlexifyNew\src\core\store" />

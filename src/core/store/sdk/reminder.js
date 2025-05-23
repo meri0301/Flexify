@@ -1,5 +1,5 @@
 import {NetworkConstants} from "../../constants/networkConstants";
-import NetworkService from "../../service/networkService";
+import {makeAPIPostRequest, makeAPIDeleteRequest} from "../../service/networkService";
 
 const postReminder = (data) => {
     const url = [NetworkConstants.request_url.REMINDER];
@@ -7,7 +7,7 @@ const postReminder = (data) => {
         body: data || {}
     };
 
-    return NetworkService.makeAPIPostRequest(url, options);
+    return makeAPIPostRequest(url, options);
 }
 
 const deleteReminder = (data) => {
@@ -16,7 +16,7 @@ const deleteReminder = (data) => {
         body: data || {}
     };
 
-    return NetworkService.makeAPIDeleteRequest(url, options);
+    return makeAPIDeleteRequest(url, options);
 }
 
 export {postReminder, deleteReminder};

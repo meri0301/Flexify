@@ -1,5 +1,5 @@
 import {NetworkConstants} from "../../constants/networkConstants";
-import NetworkService from "../../service/networkService";
+import {makeAPIPostRequest} from "../../service/networkService";
 
 const postFeedback = (data) => {
     const url = [NetworkConstants.request_url.FEEDBACK];
@@ -7,6 +7,6 @@ const postFeedback = (data) => {
         body: data || {}
     };
 
-    return NetworkService.makeAPIPostRequest(url, options);
+    return makeAPIPostRequest(url, options);
 }
 export {postFeedback};
