@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0beb0353-7019-4ccd-8df3-89a4bfbc9ae0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/service/networkService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/service/networkService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/feedback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/reminder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/reminder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/token.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/store/sdk/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/store/sdk/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account/myProfile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/myProfile/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="0beb0353-7019-4ccd-8df3-89a4bfbc9ae0" name="Changes" comment="fixes from mac" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,9 +51,32 @@
       <updated>1748002723183</updated>
       <workItem from="1748002724255" duration="545000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes from mac">
+      <created>1748035713884</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748035713884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes from mac" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes from mac" />
   </component>
 </project>
