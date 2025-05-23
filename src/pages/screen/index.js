@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useState, useEffect} from "react";
 import "./index.scss";
 import Home from "../home";
 import Today from "../today";
@@ -6,9 +6,14 @@ import Account from "../account";
 import Header from "./header";
 import Footer from "./footer";
 import Workouts from "../workouts";
+import {getMe} from "../../core/store/sdk/user";
 
 const Screen = () => {
     const [currentPage, setCurrentPage] = useState('home');
+
+    useEffect(() => {
+        getMe();
+    }, []);
 
     const buttonClickHandler = useCallback((page) => {
         setCurrentPage(page.value);

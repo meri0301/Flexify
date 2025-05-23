@@ -4,6 +4,7 @@ import {Link, useNavigate} from "react-router-dom";
 import {FaAngleLeft} from "react-icons/fa6";
 import {GoogleLogin} from "@react-oauth/google";
 import {jwtDecode} from "jwt-decode";
+import {postToken} from "../../../core/store/sdk/token";
 
 const SignIn = () => {
     const [email, setEmail] = useState("");
@@ -13,6 +14,7 @@ const SignIn = () => {
 
     const signInHandler = useCallback(() => {
         navigate('/screen');
+        postToken({email, password});
     }, [navigate]);
 
     const loginGoogleHandler = useCallback((response) => {

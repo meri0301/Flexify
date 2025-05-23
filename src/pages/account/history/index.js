@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import styles from "./index.module.scss";
 import WorkoutHistoryCard from "./historyCard";
+import {getHistory} from "../../../core/store/sdk/history";
 
 import img1 from "../../../assets/exercises/11.jpg";
 import img2 from "../../../assets/exercises/12.jpg";
@@ -36,6 +37,11 @@ const workoutsData = [
 
 const WorkoutHistoryPage = () => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        getHistory()
+    }, []);
+
 
     return (
         <div className={styles.historyPage}>

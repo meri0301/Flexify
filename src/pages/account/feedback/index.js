@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./index.module.scss";
 import { FiCamera } from "react-icons/fi";
 import Button from "../../../components/button";
+import {postFeedback} from "../../../core/store/sdk/feedback";
 
 const FeedbackPage = () => {
     const navigate = useNavigate();
     const [feedback, setFeedback] = useState("");
     const [image, setImage] = useState(null);
+
+    useEffect(() => {
+        postFeedback({feedback});
+    }, [feedback]);
 
     const handleImageUpload = (e) => {
         const file = e.target.files[0];

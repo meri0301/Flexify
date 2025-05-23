@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import {useNavigate} from "react-router-dom";
 import {FaTrashAlt} from "react-icons/fa";
 import Button from "../../../components/button";
+import {deleteReminder, postReminder} from "../../../core/store/sdk/reminder";
 
 const weekdays = ["S", "M", "T", "W", "T", "F", "S"];
 
@@ -58,6 +59,7 @@ const ReminderPage = () => {
     };
 
     useEffect(() => {
+        postReminder();
         localStorage.setItem("reminders", JSON.stringify(reminders));
     }, [reminders]);
 
@@ -85,7 +87,8 @@ const ReminderPage = () => {
         setReminders(updated);
     };
 
-    const deleteReminder = (index) => {
+    const deleteReminders = (index) => {
+        deleteReminder();
         const updated = reminders.filter((_, i) => i !== index);
         setReminders(updated);
     };
@@ -119,7 +122,7 @@ const ReminderPage = () => {
                 {reminder.days.map((d) => ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d]).join(", ")}
               </span>
                         </div>
-                        <button className={styles.deleteButton} onClick={() => deleteReminder(index)}><FaTrashAlt/>
+                        <button className={styles.deleteButton} onClick={() => deleteReminders(index)}><FaTrashAlt/>
                         </button>
                     </div>
                 ))}

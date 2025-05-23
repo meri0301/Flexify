@@ -5,6 +5,7 @@ import {GoogleLogin} from "@react-oauth/google";
 import {jwtDecode} from "jwt-decode";
 import {FaAngleLeft} from "react-icons/fa6";
 import {Link, useNavigate} from "react-router-dom";
+import {signUp} from "../../../core/store/sdk/token";
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -28,6 +29,7 @@ const SignUp = () => {
             return;
         }
         setError("");
+        signUp({name: formData.name, email: formData.email, password: formData.password});
         console.log("Form submitted:", formData);
         navigate('/preferences');
     };
